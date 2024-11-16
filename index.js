@@ -15,6 +15,7 @@ app.use(express.json());
 // CORS configuration
 app.use(cors({
     origin: ['http://localhost:5173', 'https://bookstore-client-two.vercel.app'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
 }));
 
